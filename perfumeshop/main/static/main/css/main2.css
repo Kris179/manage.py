@@ -1,0 +1,797 @@
+html{
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body
+{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  min-height: 2000px;
+
+}
+.btn-up {
+  position: fixed;
+  background-color: #EDDEB5;
+  right: 20px;
+  bottom: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 50px;
+}
+
+.btn-up::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: #c3ac19;
+  }
+}
+
+
+
+  .nav-scroller__items {
+
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  /* для всех пунктов кроме активного */
+.nav-scroller__item:not(.nav-scroller__item_active):hover {
+    background-color: #EDDEB5;
+    color: #000;
+  }
+.nav-scroller a {
+
+  display: block;
+
+  padding: 5px 15px;
+
+  color: #000;
+
+ font-size: 24px;
+
+ text-decoration: none;
+
+}
+
+h1 {
+  font-weight: bold;
+  color: #000;
+  font-size: 40px;
+}
+
+.fs-5 {
+  font-weight: regular;
+  color: #000;
+  font-size: 22px;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+ 
+.button {
+  color: #fff;
+  user-select: none; /* Убираем текстовое выделение */
+  border-radius: 10px;
+  text-decoration: none;	/* Убираем подчеркивание */
+  outline: none; /* Убираем контур вокруг ссылки */
+  background-color: #000; /* Цвет фона */
+  padding: 1em 2em; /* Отступ от текста до рамки */
+  }
+  a.button:active {
+  background-color: #EDDEB5; /* Цвет кнопки при нажатии */
+  }
+  a.button:hover {
+  background-color: #EDDEB5; /* Цвет кнопки при наведении курсора */
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+#block_1 {
+  height: 680px;
+  width: 1400px;
+  background-image:url(img/heager.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+   
+}
+
+.fs-5 {
+  margin-top:35px;
+}
+#block_2 {
+  height: 680px;
+  width: 1400px;
+  background-image:url(img/her.png);
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+#for {
+  display: flex;
+  flex-direction: row;
+  
+}
+#for:before, #for:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 5px solid;
+  margin: auto;
+  color: #EDDEB5;
+  margin-bottom: 30px;
+}
+#for:before {
+  margin-right: 40px;
+}
+#for:after {
+  margin-left: 40px;
+}
+
+
+
+#slide1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+
+#slide2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 115px;
+  margin-top: 20px;
+}
+
+#slide3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 65px;
+  margin-top: 20px;
+} 
+
+#block_3 {
+  height: 680px;
+  width: 1400px;
+  background-image:url(img/hero.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-top: 30px;
+}
+
+#slide4{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+
+#slide5{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+#slide6{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 105px;
+  margin-top: 20px;
+} 
+
+#brand{
+  display: flex;
+  flex-direction: row;
+}
+#brand:before, #brand:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 5px solid;
+  margin: auto;
+  color: #EDDEB5;
+}
+#brand:before {
+  margin-right: 40px;
+}
+#brand:after {
+  margin-left: 40px;
+}
+
+#for_1{
+  display: flex;
+  flex-direction: row;
+}
+#for_1:before, #for_1:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 5px solid;
+  margin: auto;
+  color: #EDDEB5;
+}
+#for_1:before {
+  margin-right: 40px;
+}
+#for_1:after {
+  margin-left: 40px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+#block_4 {
+  height: 680px;
+  width: 1400px;
+  background-repeat: no-repeat;
+  background-position: left; 
+  margin-top: 30px;
+  
+}
+
+.brand_2 {
+  margin-left: 125px;
+  margin-top: -50px;
+}
+
+.fs-2_1 {
+  margin-top: -660px;
+  margin-left: 480px;
+  font-size: 22px;
+  line-height: 1.2cm;
+  vertical-align: middle;
+  text-align: left;
+  word-wrap: break-word;
+  width: 790px;
+}
+ 
+.fs-2_2 {
+  margin-left: 605px;
+  font-size: 22px;
+  line-height: 1.2cm;
+  vertical-align: middle;
+  text-align: left;
+  word-wrap: break-word;
+   width: 615px;
+}
+
+#catalog{
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+#catalog:before, #catalog:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 5px solid;
+  margin: auto;
+  color: #EDDEB5;
+  
+ 
+}
+#catalog:before {
+  margin-right: 40px;
+}
+#catalog:after {
+  margin-left: 40px;
+}
+
+a.button_2:hover {
+  background-color: #EDDEB5; /* Цвет кнопки при наведении курсора */
+  }
+a.button_1 {
+  display: inline-block;
+  background: #EDDEB5; /* Цвет фона */
+  font-size: 14px; /* Размер текста */
+  padding: 5px 20px; /* Поля вокруг текста */
+  color: #000;
+  padding: 12px;
+  border-radius: 22px;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 100;
+  margin-left: 125px;
+  margin-top: 20px;
+}
+
+a.button_2:active {
+  background-color: #EDDEB5; /* Цвет кнопки при нажатии */
+  }
+a.button_2 {
+  display: inline-block;
+  border: 2px solid #EDDEB5;
+  font-size: 14px; /* Размер текста */
+  padding: 5px 20px; /* Поля вокруг текста */
+  color: #000;
+  padding: 12px;
+  border-radius: 22px;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 100;
+  margin-left: 20px;
+}
+
+.card_1 {
+  margin-left: 120px;
+  margin-top: 50px;
+}
+
+h4 {
+  font-weight: 100;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: -15px;
+}
+
+h3 {
+  font-size: 20px;
+}
+#men {
+  font-size: 22px;
+  margin-left: 135px;
+  font-weight: 300;
+}
+#women {
+  font-size: 22px;
+  margin-top: 80px;
+  margin-left: 135px;
+  font-weight: 300;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFE18F;
+  margin-top: -5px;
+}
+
+
+.card_2 {
+  margin-left: 515px;
+  margin-top: -360px;
+}
+
+.card_3 {
+  margin-left: 905px;
+  margin-top: -360px;
+}
+
+.card_4 {
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.card_5 {
+  margin-left: 510px;
+  margin-top: -360px;
+}
+.card_6 {
+  margin-left: 920px;
+  margin-top: -360px;
+}
+
+#bag {
+  margin-left: 215px;
+  margin-top: 80px;
+}
+
+#bag_1 {
+  margin-left: 400px;
+  margin-top: -72px;
+  font-size: 32px;
+  font-weight: 300;
+}
+.card_7 {
+  margin-left: 210px;
+}
+ 
+#name {
+  margin-left: 210px;
+  margin-top: -160px;
+}
+
+#name_1 {
+  margin-left: 210px;
+  margin-top: -8px;
+}
+
+.price_1{
+  margin-left: 355px;
+  margin-top: -30px;
+  font-size: 24px;
+  color: #FFE18F;
+}
+
+#col {
+  margin-left: 210px; 
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+#hr_1 {
+  width: 68%;
+  border-bottom: 1px solid;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+
+  #ito {
+    margin-left: 800px; 
+    margin-top: -175px;
+  }
+
+  .price_2 {
+    margin-left: 1015px;
+    font-size: 24px;
+    margin-top: 90px;
+    color: #FFE18F;
+  }
+
+  #delivery {
+    margin-left: 800px; 
+    margin-top: 70px;
+  }
+
+  
+  .point {
+    margin-left: 800px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .city {
+    margin-left: 1040px;
+    font-size: 18px;
+    margin-top: -42px;
+  }
+
+  a.button_3 {
+    color: #000;
+    user-select: none; /* Убираем текстовое выделение */
+    border-radius: 10px;
+    text-decoration: none;	/* Убираем подчеркивание */
+    outline: none; /* Убираем контур вокруг ссылки */
+    background-color: #EDDEB5; /* Цвет фона */
+    padding: 1em 2em; /* Отступ от текста до рамки */
+    }
+    a.button_3:active {
+    background-color: #FFE18F; /* Цвет кнопки при нажатии */
+    }
+    a.button_3:hover {
+    background-color: #FFE18F; /* Цвет кнопки при наведении курсора */
+    }
+
+    a.button_4 {
+      color: #fff;
+      user-select: none; /* Убираем текстовое выделение */
+      border-radius: 10px;
+      text-decoration: none;	/* Убираем подчеркивание */
+      outline: none; /* Убираем контур вокруг ссылки */
+      background-color: #000; /* Цвет фона */
+      padding: 1.4em 9em; /* Отступ от текста до рамки */
+      }
+      a.button_4:active {
+      background-color: #242424; /* Цвет кнопки при нажатии */
+      }
+      a.button_4:hover {
+      background-color: #242424; /* Цвет кнопки при наведении курсора */
+      }
+
+      #block_7 {
+        height: 600px;
+        
+      }
+      
+      .card_8 {
+        margin-left: 210px;
+        margin-top: -290px;
+      }
+
+      #rectangle {
+        margin-top: -500px;
+        margin-left: 640px;
+        width: 420px;
+        height: 500px;
+        background: #fff;
+        border-radius: 15px;
+    }
+
+    #regis {
+      font-size: 22px;
+      margin-left: 805px;
+      margin-top: -470px;
+      font-weight: 300;
+    }
+
+    #dannie {
+      font-size: 18px;
+      margin-left: 720px;
+      color: #4E4E4E;
+    
+    }
+
+    .container .checkmark:after {
+      left: 3px;
+      width: 4px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    
+    
+    /* Даю согласие на обработку Персональных данных */
+    
+    .text-checkbox{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #000;
+    }
+    
+    .white-text{
+      color: #FFE18F;
+      text-decoration: underline;
+    }
+
+    a.button_5 {
+      color: #fff;
+      user-select: none; /* Убираем текстовое выделение */
+      border-radius: 10px;
+      text-decoration: none;	/* Убираем подчеркивание */
+      outline: none; /* Убираем контур вокруг ссылки */
+      background-color: #000; /* Цвет фона */
+      padding: 1.2em 4em; /* Отступ от текста до рамки */
+      }
+      a.button_5:active {
+      background-color: #242424; /* Цвет кнопки при нажатии */
+      }
+      a.button_5:hover {
+      background-color: #242424; /* Цвет кнопки при наведении курсора */
+      }
+
+   
+
+    .some-input_1 {
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+      color: inherit;
+      outline: none;
+      width: 300px;
+      color: #909090;
+      margin-left: 720px; 
+      margin-top: -80px;
+    }
+
+    .some-input_2 {
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+      color: inherit;
+      outline: none;
+      width: 300px;
+      color: #909090;
+      margin-left: 720px; 
+    }
+    
+    .some-input_3 {
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+      color: inherit;
+      outline: none;
+      width: 300px;
+      color: #909090;
+      margin-left: 720px; 
+    }
+    
+    ::placeholder { /* Most modern browsers support this now. */
+       font-family: Inter;
+      font-size: 11px ;
+      line-height: 130%;
+      text-transform: uppercase;
+      color: #909090;
+      align-items: center;
+      transform: translateY(-5px);
+    }
+
+    .voiti {
+      text-decoration:none ;
+      color: #000;
+    }
+
+    #block_6 {
+      height: 200px;
+      width: 1400px;
+    }
+    #hr_6 {
+      margin-top: 80px;
+      color: #000;
+      }
+
+      main.podval.text1 {
+        font-size: 22px;
+        text-decoration: none !important;
+        color: #000;
+        color:inherit;
+        margin-top: -20px;
+        margin-left: 500px;
+        
+
+        
+      }
+      
+    
+
+    #avtor {
+      font-size: 22px;
+      margin-left: 805px;
+      margin-top: -470px;
+      font-weight: 300;
+    }
+      
+    .some-input_4 {
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+      color: inherit;
+      outline: none;
+      width: 300px;
+      color: #909090;
+      margin-left: 720px; 
+      margin-top: -80px;
+    }
+
+    .some-input_5 {
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+      color: inherit;
+      outline: none;
+      width: 300px;
+      color: #909090;
+      margin-left: 720px; 
+      margin-top: 10px;
+    }
+    a.button_6 {
+      color: #fff;
+      user-select: none; /* Убираем текстовое выделение */
+      border-radius: 10px;
+      text-decoration: none;	/* Убираем подчеркивание */
+      outline: none; /* Убираем контур вокруг ссылки */
+      background-color: #000; /* Цвет фона */
+      padding: 1.2em 7em; /* Отступ от текста до рамки */
+      }
+      a.button_6:active {
+      background-color: #242424; /* Цвет кнопки при нажатии */
+      }
+      a.button_6:hover {
+      background-color: #242424; /* Цвет кнопки при наведении курсора */
+      }
+
+      .zaregis {
+        text-decoration:none ;
+        color: #000;
+      }
+      
+      .text1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 500px;
+        margin-top: -30px;
+      }
+
+      .text2 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 500px;
+        
+      }
+
+      .text3 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 750px;
+        margin-top: -105px;
+      }
+
+      .text4 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 750px;
+      }
+
+      .text5 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 995px;
+        margin-top: -105px;
+      }
+
+      .text6 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 995px;
+      }
+
+      .text1_1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 500px;
+        margin-top: -30px;
+      }
+
+      .text2_1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 500px;
+        
+      }
+
+      .text3_1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 750px;
+        margin-top: -115px;
+      }
+
+      .text4_1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 750px;
+      }
+
+      .text5_1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 995px;
+        margin-top: -115px;
+      }
+
+      .text6_1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 995px;
+      }
+      
+    

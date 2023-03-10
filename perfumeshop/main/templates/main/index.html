@@ -1,0 +1,232 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/css.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Lichi</title>
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+  </head>
+ <body>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <div class="main" id="block_1">
+
+    <div class="nav-scroller">
+      <div style="margin-left: 200px;">
+        <div class="nav-scroller">
+          <nav class="nav-scroller__items">
+            <a class="nav-scroller__item" href="#block_4">О бренде</a>
+            <a class="nav-scroller__item" href="#block_2">Для неё</a>
+            <a class="nav-scroller__item" href="#block_3">Для него</a>
+            <a class="nav-scroller__item" href="#"><img src="{% static 'main/img/parfume.png'%}" width="60"></a>
+            <a class="nav-scroller__item" href="#block_5">Каталог</a>
+            <a class="nav-scroller__item" href="registr.html">Профиль</a>
+            <a class="nav-scroller__item" href="bag.html">Корзина</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div style="margin-left: 220px;">
+      <div style="margin-top: 165px;">
+        <div style="margin-bottom: 80px;">
+          <h1>BURBERRY</h1>
+          <div style="margin-top: -20px;">
+            <div class="text-wrap" style="width: 40rem;">
+              <p class="fs-5">Oткройте для себя новый лимитированный аромат, который наилучшим образом подчеркнет
+                элегантность мужчины.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" id="submit" class="button" >Купить сейчас</button>
+      <div style="margin-left: 365px;">
+      </div>
+    </div>
+  </div>
+  <div>
+    <h1 id="for">Для неё</h1>
+  </div>
+
+  <div class="main" id="block_2">
+
+    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+
+      <div class="carousel-inner" style="margin-left:830px;">
+        <div class="carousel-item active" style="margin-top:130px;">
+          <img src="{% static 'main/img/her1.png'%}" class="d-block w-15" alt="...">
+          <p id="slide1">BURBERRY HER</p>
+        </div>
+        <div class="carousel-item" style="margin-top:130px;">
+          <img src="{% static 'main/img/her2.png'%}" class="d-block w-15" alt="...">
+          <p id="slide2">BURBERRY London</p>
+        </div>
+        <div class="carousel-item" style="margin-top:130px;">
+          <img src="{% static 'main/img/her3.png'%}" class="d-block w-15" alt="...">
+          <p id="slide3">BURBERRY My Burberry Blush</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"
+        style="margin-left:680px; margin-top: 100px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"
+        style="margin-right:-40px; margin-top: 100px;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+  </div>
+  <div>
+    <h1 id="for_1">Для него</h1>
+  </div>
+  <div class="main" id="block_3">
+
+    <div id="carouselExampleCaptions_1" class="carousel carousel-dark slide" data-bs-ride="false">
+
+      <div class="carousel-inner" style="margin-left:110px;">
+        <div class="carousel-item active" style="margin-top:130px;">
+          <img src="{% static 'main/img/hero1.png'%}" class="d-block w-15" alt="...">
+          <p id="slide4">BURBERRY HERO</p>
+        </div>
+        <div class="carousel-item" style="margin-top:130px;">
+          <img src="{% static 'main/img/hero2.png'%}" class="d-block w-15" alt="...">
+          <p id="slide5">BURBERRY Mr. Burberry Indigo</p>
+        </div>
+        <div class="carousel-item" style="margin-top:130px;">
+          <img src="{% static 'main/img/hero3.png'%}" class="d-block w-15" alt="...">
+          <p id="slide6">BURBERRY brit homme</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions_1"
+        data-bs-slide="prev" style="margin-left:-50px; margin-top: 100px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions_1"
+        data-bs-slide="next" style="margin-right:670px; margin-top: 100px;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+  </div>
+  <div class="main" id="block_4">
+    <h1 id="brand">О бренде</h1>
+
+    <div class="brand">
+      <div style="margin-left: 5px;">
+        <img src="{% static 'main/img/brand.png'%}" alt>
+      </div>
+    </div>
+    <div class="brand_2">
+      <img src="{% static 'main/img/brand2.png'%}" alt>
+    </div>
+    <p class="fs-2_1">Burberry - английский парфюмерный бренд, ведущим направлением деятельности которого является
+      индустрия моды. В качестве логотипа для своего предприятия Томас Берберри выбрал изображение устремившегося вскачь
+      закованного в доспехи рыцаря.</p>
+    <div style="margin-top:40px;">
+      <p class="fs-2_2">Haчинaя c 1981 гoдa, кoгдa был выпущeн пepвый пapфюм мoднoгo дoмa, и дo cиx пop лeгкo узнaвaeмыe
+        apoмaты Burberrу цeнятcя пo вceму миpу зa элeгaнтнocть и утoнчeннocть, пpиcущиe aнглийcкoй клaccикe. Moдa нa
+        oпpeдeлeнныe apoмaты пpиxoдит и уxoдит, нo клaccичecкиe дуxи вceгдa ocтaютcя caмыми вocтpeбoвaнными и умecтными
+        для любыx oбcтoятeльcтв.Можно сказать, что духи обладают истинно британским характером. Это сочетание традиций,
+        аристократизма и элегантности.</p>
+    </div>
+  </div>
+
+  <div>
+    <h1 id="catalog">Каталог</h1>
+  </div>
+
+  <div class="main" id="block_5">
+    <h2 id="men">Мужская парфюмерия</h2>
+    <section>
+      <div class="card_1">
+        <img src="{% static 'main/img/brit.png'%}" alt="">
+        <h4>туалетная вода</h4>
+        <h3>Burberry Brit For Men </h3>
+        <p class="price">8 900 руб.</p>
+      </div>
+      <div style="margin-left: 310px; margin-top: -50px;">
+        <a href="bag.html"> <img src="{% static 'main/img/bag.png'%}"> </a>
+      </div>
+    </section>
+    <section>
+      <div class="card_2">
+        <img src="{% static 'main/img/mr.png'%}" alt="">
+        <h4>туалетная вода</h4>
+        <h3>Mr. Burberry</h3>
+        <p class="price">9 500 руб.</p>
+        <div style="margin-left: 190px; margin-top: -50px;">
+          <a href="bag.html"> <img src="{% static 'main/img/bag.png'%}"> </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="card_3">
+        <img src="{% static 'main/img/hero4.png'%}" alt="">
+        <h4>туалетная вода</h4>
+        <h3>Hero</h3>
+        <p class="price">12 000 руб.</p>
+        <div style="margin-left: 270px; margin-top: -50px;">
+          <a href="bag.html"> <img src="{% static 'main/img/bag.png'%}"> </a>
+        </div>
+      </div>
+    </section>
+    <h2 id="women">Женская парфюмерия</h2>
+    <section>
+      <div class="card_4">
+        <img src="{% static 'main/img/my.png'%}" alt="">
+        <h4>парфюмерная вода</h4>
+        <h3>My Burberry </h3>
+        <p class="price">8 600 руб.</p>
+      </div>
+      <div style="margin-left: 310px; margin-top: -50px;">
+        <a href="bag.html"> <img src="{% static 'main/img/bag.png'%}"> </a>
+      </div>
+    </section>
+    <section>
+      <div class="card_5">
+        <img src="{% static 'main/img/her4.png'%}" alt="">
+        <h4>парфюмерная вода</h4>
+        <h3>Burberry Her</h3>
+        <p class="price">11 300 руб.</p>
+        <div style="margin-left: 190px; margin-top: -50px;">
+          <a href="bag.html"> <img src="{% static 'main/img/bag.png'%}"> </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="card_6">
+        <img src="{% static 'main/img/london.png'%}" alt="">
+        <h4>парфюмерная вода</h4>
+        <h3>London For Women</h3>
+        <p class="price">3 000 руб.</p>
+        <div style="margin-left: 190px; margin-top: -50px;">
+          <a href="bag.html"> <img src="{% static 'main/img/bag.png'%}"> </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="main" id="block_6">
+    <hr id="hr_6" size="3" width="99%" color="#000">
+    <div style="margin-left: 120px; margin-top:40px;">
+      <img src="{% static 'main/img/podval.png'%}" alt="">
+    </div>
+    <div class="podval">
+      <p class="text1">Для неё</p>
+      <p class="text2">Для него</p>
+      <p class="text3">О бренде</p>
+      <p class="text4">Каталог</p>
+      <p class="text5">Профиль</p>
+      <p class="text6">Корзина</p>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
