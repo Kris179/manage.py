@@ -1,4 +1,5 @@
 {% load static %}
+{% load django_bootstrap5 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,23 +28,8 @@
 <div class="m-auto w-25 pt-lg-5">
     <form action="{% url 'accounts:login' %}" method="POST">
         {% csrf_token %}
-          <!-- Email input -->
-          <div class="form-outline mb-2">
-            {{ form.username }}
-            <label class="form-label" for="{{ form.username.id_for_label }}">Email address</label>
-          </div>
-
-          <!-- Password input -->
-          <div class="form-outline mb-2">
-            {{ form.password1 }}
-            <label class="form-label" for="{{ form.password1.id_for_label }}">Password</label>
-          </div>
-
-          <!-- Password validation input -->
-          <div class="form-outline mb-2">
-            {{ form.password2 }}
-            <label class="form-label" for="{{ form.password2.id_for_label }}">Repeat Password</label>
-          </div>
+          <!-- Bootstrap form -->
+          {% bootstrap_form form layout='horizontal' %}
 
           <!-- Submit button -->
           <button type="submit" class="btn btn-dark btn-block mb-2 " style="width: 100%">Sign in</button>
