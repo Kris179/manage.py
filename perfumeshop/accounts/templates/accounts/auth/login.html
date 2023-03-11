@@ -16,7 +16,7 @@
       <div class="container-fluid d-flex justify-content-around">
           <ul class="navbar-nav ms-2 fs-5" style="flex-direction: row">
       </ul>
-        <a class="navbar-brand mx-auto position-absolute fs-2 fw-bolder" href="{% url "index" %}">
+        <a class="navbar-brand mx-auto position-absolute fs-2 fw-bolder" href="{% url 'main:index' %}">
           BIG-SHOES
         </a>
           <ul class="navbar-nav ms-2 fs-5" style="flex-direction: row">
@@ -25,7 +25,7 @@
     </nav>
 
 <div class="m-auto w-25 pt-lg-5">
-    <form action="{% url 'accounts:signup' %}" method="POST">
+    <form action="{% url 'accounts:login' %}" method="POST">
         {% csrf_token %}
           <!-- Email input -->
           <div class="form-outline mb-2">
